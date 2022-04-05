@@ -13,7 +13,7 @@
         document.body.appendChild(app);
 
         let playerSprite = PIXI.Sprite.from('player.png')
-        document.body.appendChild(playerSprite);
+        app.stage.addChild(playerSprite);
 
         let elapsed = 0.0;
         app.ticker.add((delta) => {
